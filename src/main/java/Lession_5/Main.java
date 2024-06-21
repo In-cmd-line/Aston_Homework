@@ -6,7 +6,7 @@ import static Lession_5.Task_11.addNumInArr;
 import static Lession_5.Task_12.changeArr;
 import static Lession_5.Task_13.crossArr;
 import static Lession_5.Task_14.arrReturn;
-import static Lession_5.Task_2.chekSumSing;
+import static Lession_5.Task_2.cheсkSumSing;
 import static Lession_5.Task_3.printColor;
 import static Lession_5.Task_4.compareNumbers;
 import static Lession_5.Task_5.checkSum;
@@ -18,7 +18,7 @@ import static Lession_5.Task_9.whatYear;
 public class Main {
     public static void main (String [] args) {
         printThreeWords();
-        chekSumSing();
+        cheсkSumSing();
         printColor();
         compareNumbers();
         checkSum(5, 6);
