@@ -1,4 +1,4 @@
-package Lession_7;
+package Lession_7.Task_1;
 
 // для удобстава делаем отдельный класс Еда
 public class Food {
