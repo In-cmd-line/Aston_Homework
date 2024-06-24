@@ -1,5 +1,7 @@
 package Lession_6;
 
+
+// создать массив сотрудников
 public class ArrayOfEmployees {
     public static void createArr() {
         Employee[] arrEmployees = new Employee[5];
@@ -13,7 +15,8 @@ public class ArrayOfEmployees {
                 "FrodoZadolbal@middleearth.md", "+79219998877", 0, 2000);
         arrEmployees[4] = new Employee("Бабайка Под Кроватью", "Домашний питомец",
                 "booo@hata.ru", "+79457775533", 1, 38);
-        // вывод на печать не требуется в задании, он создан для проверки
+
+        // смотрим массив
         for (Employee i : arrEmployees) {
             i.printData();
             System.out.println();
