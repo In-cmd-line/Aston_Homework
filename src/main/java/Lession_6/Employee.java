@@ -19,7 +19,7 @@ public class Employee {
         this.age = age;
     }
 
-    // конструктор для самозаполнения объекта
+    // конструктор для самозаполнения объекта (в задании написано, что должен замозаполняться О_о)
     public Employee() {
         fullName = "Иоан Васильевич Грозный";
         position = "Царь";
@@ -29,6 +29,7 @@ public class Employee {
         age = 50;
     }
 
+    // метод для вывода инфо о сотруднике
     public void printData() {
         System.out.println("ФИО сотрудника: " + fullName);
         System.out.println("Должность: " + position);
