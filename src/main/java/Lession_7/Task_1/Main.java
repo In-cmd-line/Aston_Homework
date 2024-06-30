@@ -3,8 +3,8 @@ package Lession_7.Task_1;
 // проверяем ВСЁ
 public class Main {
     public static void main(String[] args) {
-        Food dishOfFood = new Food(); // начальное количество еды задано в классе
-        dishOfFood.addFood(30); // тут можно добавить вкусняшек
+        Bowl dishOfBowl = new Bowl(30); // ИСПРАВЛЕНО: теперь еда закидывается при создании объекта
+        dishOfBowl.addFood(30); // тут можно добавить вкусняшек
 
         // тестим Котофеича в спорт режиме
         Cat catBarsik = new Cat("Барсик");
@@ -31,21 +31,21 @@ public class Main {
                 "Создатель всея Сущего, Мистер Мохнатые Лапки и просто отличный Котик");
         // кормим Мохнатых
         for (Cat i : bunchOfCats) {
-            if (dishOfFood.food >= i.needFood) {
-                dishOfFood.food -= i.needFood;
-                i.satiety = true;
+            if (dishOfBowl.food >= i.getNeedFood()) {
+                dishOfBowl.food -= i.getNeedFood();
+                i.setSatiety(true);
             }
-            System.out.println(i.satiety ? "Котофей " + i.name +
+            System.out.println(i.getSatiety() ? "Котофей " + i.name +
                     " сыт, доволен и не будет уничтожать человечество!" :
                     "Котя " + i.name + " голодный и грустный!");
             System.out.println("Мохнатому надо было " +
-                    i.needFood + " еды."); // вывод на печать для проверки, сколько еды требовалось
+                    i.getNeedFood() + " еды."); // вывод на печать для проверки, сколько еды требовалось
             System.out.println("В миске осталось " +
-                    dishOfFood.food + " еды.");
+                    dishOfBowl.food + " еды.");
             System.out.println();
         }
-        System.out.println("Всего создано животных - " + Animal.printCount());
-        System.out.println("Из них Котофеев - " + Cat.printCountCat());
-        System.out.println("И Собакенов - " + Dog.printCountDog());
+        System.out.println("Всего создано животных - " + Animal.getCount());
+        System.out.println("Из них Котофеев - " + Cat.getCountCat());
+        System.out.println("И Собакенов - " + Dog.getCountDog());
     }
 }

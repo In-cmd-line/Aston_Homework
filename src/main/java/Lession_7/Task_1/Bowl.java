@@ -1,13 +1,11 @@
 package Lession_7.Task_1;
 
 // для удобстава делаем отдельный класс Еда
-public class Food {
-    int food;
-    int add;
-
-    // по-умолчанию закидываем в миску немного еды
-    public Food() {
-        this.food = 30;
+public class Bowl {
+    protected int food = 0;
+    // ИСПРАВЛЕНО: теперь еда закидывается при создании объекта
+    public Bowl(int food) {
+        this.food = food;
     }
 
     // метод для добавки еды
