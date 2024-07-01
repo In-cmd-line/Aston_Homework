@@ -1,4 +1,4 @@
-package Lession_7.Task_1;
+package Lesson_7.Task_1;
 
 // создать класс Собакенов
 public class Dog extends Animal {

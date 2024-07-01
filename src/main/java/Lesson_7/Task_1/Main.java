@@ -1,4 +1,4 @@
-package Lession_7.Task_1;
+package Lesson_7.Task_1;
 
 // проверяем ВСЁ
 public class Main {
