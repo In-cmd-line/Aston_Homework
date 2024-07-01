@@ -7,10 +7,10 @@ public class Park {
         public String timeOfWork;
         public int price;
 
-        public Attraction() {
-            mainInfo = "Новый аттракцион";
-            timeOfWork = "Ежедневно с 12.00 до 17.00";
-            price = 300;
+        public Attraction(String mainInfo, String timeOfWork, int price) {
+            this.mainInfo = mainInfo;
+            this.timeOfWork = timeOfWork;
+            this.price = price;
         }
     }
 }
