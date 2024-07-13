@@ -8,13 +8,9 @@ public class CalcFactorial {
         if (n < 0) {
             throw new IllegalArgumentException();
         }
-        try {
-            for (int i = 1; i <= n; i++) {
-                fact = fact.multiply(BigInteger.valueOf(i));
-            }
-            return fact;
-        } catch (IllegalArgumentException e) {
-            return fact;
+        for (int i = 1; i <= n; i++) {
+            fact = fact.multiply(BigInteger.valueOf(i));
         }
+        return fact;
     }
 }
